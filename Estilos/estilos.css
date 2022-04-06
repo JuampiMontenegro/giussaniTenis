@@ -1,0 +1,637 @@
+ *{
+   margin:0;
+   padding:0;
+ }
+ 
+ /*Utilizado para que cada Rem sea igual a 10px */
+ 
+ html{
+    font-size: 62.5%;
+ }
+
+
+  /*Estilos para todas las secciones y class reutilizadas en ambas secciones*/
+
+ body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color:rgba(0, 0, 0, 0.771) ;
+ }
+
+
+ p{
+   font-size: 2rem;
+   margin: 2rem 0rem;
+   color: white;
+   text-align: center;
+} 
+
+h2{
+   text-align: center;
+   font-size:3.5rem;
+   margin-top: 5rem;
+   margin-bottom: 3rem;
+   color: darkgoldenrod;
+   font-weight: 700;
+   text-decoration:underline;
+}
+
+ h3{
+   font-size: 2.3rem;
+   color: white;
+   text-align: center;
+   margin-bottom: 2rem;
+   text-decoration: underline;
+ }
+
+
+ .menuNavegacion{
+   list-style-type: none;
+   background-color:rgba(226, 226, 226, 0.907);
+   display: flex;
+   justify-content: center;
+}
+
+.menuNavegacion li{
+   font-weight: 500;
+   font-size: 2rem;
+   padding: 1.5rem;
+   font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.menuNavegacion li a{
+   text-decoration: none;
+   color: darkgoldenrod;
+}
+
+.piePagina{
+   margin-top: 10rem;
+   grid-area: footer;
+   background-color:darkgrey;
+}
+
+.twitter{
+   position: fixed;
+   right: 0.5rem;
+   bottom: 5rem;
+   height: 5rem;
+   width: 5rem;
+}
+
+.insta{
+   position: fixed;
+   bottom: 5rem;
+   right: 7rem;
+   height: 5rem;
+   width: 5rem;
+}
+
+.face{
+   position: fixed;
+   bottom: 5rem;
+   right: 14rem;
+   height: 5rem;
+   width: 5rem;
+}
+
+.telefono{
+   height: 5rem;
+   width: 5rem;
+   margin-left: 55rem;
+   position: relative;
+   top: 8rem;
+}
+
+.piePagina a{
+   font-size: 2rem;
+   color: white;
+   position: relative;
+   margin-left: 70rem;
+}
+
+
+    /*Sección Index(Inicio)*/
+
+.contenedorIndex{
+   display: grid;
+   grid-template-columns: 1.1fr 1fr;
+   grid-template-rows: 0.3fr 1fr 0.4fr;
+   grid-template-areas: 
+   "encabezado encabezado"
+   "contenido contenido"
+   "footer footer";
+   background-color: rgba(0, 0, 0, 0.771);
+}
+
+.encabezadoIndex{
+   margin-top: 3rem;
+   grid-area: encabezado;
+   display: flex;
+   flex-direction: column;
+   position: sticky;
+   top: 0;
+   z-index: 2;
+}
+
+.contenidoPrincipal{
+   margin-top: 10rem;
+   grid-area: contenido;
+   display: flex;
+   align-items: center;
+}
+
+.contenedorI{
+   display: flex;
+   flex-direction: column;
+}
+
+.tituloSecundario{
+   position: relative;
+   bottom: 5rem;
+}
+ 
+.tituloPrincipal{                                     
+   font-size: 6rem;
+   background-color:darkgrey;
+   text-align: center;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+   border-bottom: solid 0.5rem black;
+ }
+
+
+ .imagenPrincipal{
+    height: 50rem;
+    width: 50rem;
+    border-right: solid 0.3rem white;
+    margin-right: 2rem;   
+ }
+ 
+ .logoInicio{
+    height: 1.5rem;
+    width: auto;
+ }
+
+   /*Sección Instalaciones*/
+
+   .contenedorInstalaciones{
+   background-color: rgba(0, 0, 0, 0.771);
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2fr 0.2fr;
+   grid-template-areas: 
+   "encabezadoI"
+   "seccion"
+   "footer";
+   }
+
+   .encabezadoInstalaciones{
+      grid-area: encabezadoI;
+      position: sticky;
+      top: 0;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .seccionInstalaciones{
+      grid-area: seccion;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .articulos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+ .imagenGym{
+     height: 40rem;
+     width: 70rem;
+     border: solid 0.5rem white;
+ }
+
+ .imagenCanchas{
+     height: 40rem;
+     width: 70rem;
+     border: solid 0.5rem white;
+ }
+
+ div{
+     font-size: 2rem;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     color: white;
+}
+
+.iframeUbicacion{
+    height: 40rem;
+    width: 40rem;
+}
+
+.imagenPileta{
+    height: 40rem;
+    width: auto;
+    border: solid 0.5rem white;
+}
+
+.imagenFutbol{
+    height: 40rem;
+    width: auto;
+    border: solid 0.5rem white;
+}
+
+ .esparcimiento{
+   text-align: center;
+   font-size: 2rem;
+   margin-top: 1.5rem;
+ }
+
+ .requisitosEsparcimiento{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+ }
+
+ .requisitosEsparcimiento li{
+    margin-top: 1.5rem;
+    color: white;
+ }
+
+
+
+ /*Sección Staff*/
+
+
+ .tablaProfesores{
+   text-align: center;
+   margin: 6rem 40rem;
+   padding: 1rem;
+   font-size: 2rem;
+   border:groove 1rem black ;
+   background-color: rgb(238, 225, 225);
+}
+
+ th{
+   padding: 1rem;
+   border: groove 0.5rem black;
+   background-color:rgb(247, 215, 136);
+ }
+
+td{
+   padding: 1rem;
+   border: groove 0.5rem black;
+}
+
+.videoProfesores{
+   margin: 0rem 40rem;
+   width: 72rem;
+   margin-top: 4rem;
+}
+
+ /*Sección Programas de Entrenamiento*/
+
+ .seccionProgramas{
+    height: 155rem;
+ }
+
+ .imagenIniciacion{
+   margin-left: 47rem;
+   margin-bottom: 5rem;
+ }
+
+ .imagenRecreacion{
+    margin-left: 50rem;
+    height: 40rem;
+    width: 45rem; 
+ }
+
+ .imagenaltoRendimiento{
+    margin-left: 48rem;
+    height: 30rem;
+    margin-bottom: 5rem;
+ }
+
+  /*Sección Contacto*/
+ .contenedorFormulario{
+    color: black;
+ }
+
+
+ input{
+    font-size: 1.5rem;
+ }
+
+ label{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 5rem;
+    margin-top:5rem;
+    margin-bottom: 5rem;
+ }
+
+.menuDesplegable{
+   font-size: 1.5rem;
+   margin-left: 40rem;
+   margin-right: 40rem;
+}
+
+textarea{
+   display: block;
+   margin-left: 35rem;
+   margin-bottom: 2rem;
+   width: 40rem;
+   height: 25rem;
+}
+
+form{
+   background-color:rgb(252, 213, 162);
+   height: 75rem;
+   margin: 0rem 20rem;
+   border: solid 0.5rem black;
+   }
+
+.boton{
+   position: relative;
+   left: 44rem;
+   top: 2rem;
+}
+
+
+/* Diseño para Table 768px - Media Queries*/
+
+
+@media screen and (max-width:768px){
+   
+/* Seccion Index para Tablet*/
+
+.imagenPrincipal{
+   height: 30rem;
+   width: 30rem;
+}
+
+p{
+   font-size: 1rem;
+   margin: 2rem 0rem;
+   color: white;
+}   
+   
+.contenedorIndex{
+   grid-template-columns: 0.7fr 1fr;
+   grid-template-rows: 0.2fr 1fr 0.1fr;
+}
+
+.tituloSecundario{
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+}
+
+
+.twitter{
+   position: fixed;
+   right: 0.9rem;
+   bottom: 5rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.insta{
+   position: fixed;
+   bottom: 5rem;
+   right: 4rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.face{
+   position: fixed;
+   bottom: 5rem;
+   right: 7.5rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.telefono{
+   height: 2.5rem;
+   width: 2.5rem;
+   margin-left: 27rem;
+   position: relative;
+   top: 6.5rem;
+}
+
+.piePagina a{
+   font-size: 1rem;
+   position: relative;
+   margin-left: 35rem;
+}
+
+.tituloPrincipal{                                     
+   font-size: 3.5rem;
+ }
+
+ .menuNavegacion li{
+   font-size: 1.5rem;
+} 
+
+/* Seccion Instalaciones para Tablet */
+
+.contenedorInstalaciones{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2.5fr 0.1fr;
+   }
+
+div{
+   font-size: 1.1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+ }
+
+ .imagenCanchas{
+   height: 25rem;
+   width: 40rem;
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
+.imagenGym{
+   height: 25rem;
+   width: 40rem;
+}
+
+.imagenPileta{
+   height: 25rem;
+   width: 40rem;
+}
+
+.imagenFutbol{
+   height: 25rem;
+   width: 40rem;
+}
+
+.esparcimiento{
+   font-size: 1.2rem;
+ }
+
+ .requisitosEsparcimiento{
+    font-size: 1rem;
+    margin-top: 1rem;
+ }
+
+ .iframeUbicacion{
+   height: 25rem;
+   width: 25rem;
+}
+
+}
+
+
+/* Diseño para Mobile 480px, Media Queries*/
+
+@media screen and (max-width:480px){
+
+/* Seccion Index para Mobile 480px*/
+
+.contenedorIndex{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.2fr 1fr 0.2fr;
+   grid-template-areas: 
+   "encabezadoI"
+   "contenido"
+   "footer";
+}
+
+.encabezadoIndex{
+   grid-area: encabezadoI;
+}
+
+.contenidoPrincipal{
+   grid-area: contenido;
+   display: flex;
+   flex-direction: column;
+}
+
+.imagenPrincipal{
+   height: 25rem;
+   width: 25rem;
+   margin-bottom: 3rem;
+   border: none;
+}
+
+
+.tituloPrincipal{                                     
+   font-size: 3rem;
+ }
+
+.tituloSecundario{
+   font-size: 2rem;
+   margin-bottom: 0rem;
+}
+
+ p{
+    font-size: 0.9rem;
+    width: auto;
+ }
+
+ .menuNavegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .menuNavegacion li{
+   font-size: 1.2rem;
+   margin: 0;
+   padding: 0.2rem;
+} 
+
+.piePagina a{
+   font-size: 1rem;
+   position: relative;
+   margin-left: 22rem;
+}
+
+.twitter{
+   position: fixed;
+   right: 1rem;
+   bottom: 5rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.insta{
+   position: fixed;
+   bottom: 5rem;
+   right: 4rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.face{
+   position: fixed;
+   bottom: 5rem;
+   right: 7.3rem;
+   height: 2.5rem;
+   width: 2.5rem;
+}
+
+.telefono{
+   height: 2rem;
+   width: 2rem;
+   margin-left: 18rem;
+   position: relative;
+   top: 6.5rem;
+}
+
+
+/* Seccion Instalaciones para Mobile 480px */
+
+
+.imagenCanchas{
+   height: 15rem;
+   width: 25rem;
+}
+
+.imagenGym{
+   height: 15rem;
+   width: 25rem;
+}
+
+.imagenPileta{
+   height: 15rem;
+   width: 20rem;
+}
+
+.imagenFutbol{
+   height: 15rem;
+   width: 20rem;
+}
+
+div{
+   font-size: 0.9rem;
+   text-align: center;
+ }
+
+
+.esparcimiento{
+   font-size: 1rem;
+}
+
+ .requisitosEsparcimiento{
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+ }
+
+ .iframeUbicacion{
+   height: 15rem;
+   width: 15rem;
+ }
+
+
+
+
+
+}
