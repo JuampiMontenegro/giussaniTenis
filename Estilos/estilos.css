@@ -42,12 +42,19 @@ h2{
    text-align: center;
    margin-bottom: 2rem;
    text-decoration: underline;
+   transition: color 2s;
+   transition: font size 2s;
+ }
+
+ h3:hover{
+    color:goldenrod;
+    font-size: 2.5rem;
  }
 
 
  .menuNavegacion{
    list-style-type: none;
-   background-color:rgba(226, 226, 226, 0.907);
+   background: linear-gradient(to top,grey,white);
    display: flex;
    justify-content: center;
 }
@@ -65,10 +72,11 @@ h2{
    color: darkgoldenrod;
 }
 
+
 .piePagina{
    margin-top: 10rem;
    grid-area: footer;
-   background-color:darkgrey;
+   background: linear-gradient(to top,grey,white)
 }
 
 .twitter{
@@ -95,12 +103,29 @@ h2{
    width: 5rem;
 }
 
+@keyframes telefono{
+   25%{height: 5.2;
+   width: 5.2;}
+   50%{height: 5.3;
+   width: 5.3rem;}
+   75%{height: 5.2rem;
+   width: 5.2rem;}
+   100%{height: 5rem;
+   width: 5rem;}  
+}
+
+
 .telefono{
    height: 5rem;
    width: 5rem;
    margin-left: 55rem;
    position: relative;
    top: 8rem;
+   animation-name: telefono;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+   animation-duration: 3s;
+   animation-delay: 2s;
 }
 
 .piePagina a{
@@ -153,7 +178,7 @@ h2{
  
 .tituloPrincipal{                                     
    font-size: 6rem;
-   background-color:darkgrey;
+   background: linear-gradient(grey,white);
    text-align: center;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
    border-bottom: solid 0.5rem black;
@@ -164,7 +189,12 @@ h2{
     height: 50rem;
     width: 50rem;
     border-right: solid 0.3rem white;
-    margin-right: 2rem;   
+    margin-right: 2rem; 
+    transition: height 2s;  
+ }
+
+ .imagenPrincipal:hover{
+    height:45rem ;
  }
  
  .logoInicio{
@@ -206,17 +236,35 @@ h2{
       align-items: center;
    }
 
+   @keyframes imagenesInstalaciones{
+      25%{border: solid 0.6rem rgb(207, 193, 158);}
+      50%{border: solid 0.7rem rgb(200, 176, 115)}
+      75%{border: solid 0.8rem goldenrod}
+      100%{border: solid 0.5rem white} 
+   }
+
+
 
  .imagenGym{
      height: 40rem;
      width: 70rem;
      border: solid 0.5rem white;
+     animation-name: imagenesInstalaciones;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease;
+     animation-duration: 4s;
+     animation-delay: 1s;
  }
 
  .imagenCanchas{
      height: 40rem;
      width: 70rem;
      border: solid 0.5rem white;
+     animation-name: imagenesInstalaciones;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease;
+     animation-duration: 4s;
+     animation-delay: 1s;
  }
 
  div{
@@ -229,18 +277,33 @@ h2{
 .iframeUbicacion{
     height: 40rem;
     width: 40rem;
+    animation-name: imagenesInstalaciones;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
 
 .imagenPileta{
     height: 40rem;
     width: auto;
     border: solid 0.5rem white;
+    animation-name: imagenesInstalaciones;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
 
 .imagenFutbol{
     height: 40rem;
     width: auto;
     border: solid 0.5rem white;
+    animation-name: imagenesInstalaciones;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
 
  .esparcimiento{
@@ -297,21 +360,50 @@ td{
     height: 155rem;
  }
 
+
+ @keyframes aparecer{
+    0%{opacity: 100%;}
+    25%{opacity: 75%;}
+    50%{opacity: 50%;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+ }
+
  .imagenIniciacion{
    margin-left: 47rem;
    margin-bottom: 5rem;
+   transform: rotate(2deg);
+   border: solid 0.3rem white;
+   animation-name: aparecer;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-duration: 2s;
+   animation-delay: 1s; 
  }
 
  .imagenRecreacion{
     margin-left: 50rem;
-    height: 40rem;
+    height: 35rem;
     width: 45rem; 
+    border: solid 0.3rem white;
+    animation-name: aparecer;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1s; 
  }
 
  .imagenaltoRendimiento{
     margin-left: 48rem;
     height: 30rem;
     margin-bottom: 5rem;
+    transform: rotate(-2deg);
+    border: solid 0.3rem white;
+    animation-name: aparecer;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1s; 
  }
 
   /*Sección Contacto*/
