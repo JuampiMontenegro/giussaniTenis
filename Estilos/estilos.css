@@ -55,7 +55,7 @@ h2{
    list-style-type: none;
    background: linear-gradient(to top,grey,white);
    display: flex;
-   justify-content: center;
+   height: 9rem;
 }
 
 .menuNavegacion li{
@@ -476,10 +476,10 @@ p{
    color: white;
 }   
    
-.contenedorIndex{
+/*.contenedorIndex{
    grid-template-columns: 0.7fr 1fr;
    grid-template-rows: 0.2fr 1fr 0.1fr;
-}
+} */
 
 .tituloSecundario{
    font-size: 2.5rem;
@@ -514,10 +514,9 @@ p{
 .telefono{
    height: 2.5rem;
    width: 2.5rem;
-   margin-left: 27rem;
    position: relative;
    top: 6.5rem;
-}
+} 
 
 .piePagina a{
    font-size: 1rem;
