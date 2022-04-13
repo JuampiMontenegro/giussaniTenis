@@ -51,7 +51,6 @@ h2{
     font-size: 2.5rem;
  }
 
-
  .menuNavegacion{
    list-style-type: none;
    background: linear-gradient(to top,grey,white);
@@ -75,7 +74,6 @@ h2{
 
 .piePagina{
    margin-top: 10rem;
-   grid-area: footer;
    background: linear-gradient(to top,grey,white)
 }
 
@@ -84,7 +82,7 @@ h2{
    right: 0.5rem;
    bottom: 5rem;
    height: 5rem;
-   width: 5rem;
+   width: 7rem;
 }
 
 .insta{
@@ -92,7 +90,7 @@ h2{
    bottom: 5rem;
    right: 7rem;
    height: 5rem;
-   width: 5rem;
+   width: 7rem;
 }
 
 .face{
@@ -100,7 +98,7 @@ h2{
    bottom: 5rem;
    right: 14rem;
    height: 5rem;
-   width: 5rem;
+   width: 7rem;
 }
 
 @keyframes telefono{
@@ -117,28 +115,23 @@ h2{
 
 .telefono{
    height: 5rem;
-   width: 5rem;
-   margin-left: 55rem;
+   width: 6rem;
+   margin-left: 60rem;
    position: relative;
-   top: 8rem;
-   animation-name: telefono;
-   animation-iteration-count: infinite;
-   animation-timing-function: ease;
-   animation-duration: 3s;
-   animation-delay: 2s;
+   top: 8.5rem;
 }
 
 .piePagina a{
    font-size: 2rem;
    color: white;
-   position: relative;
-   margin-left: 70rem;
+   text-align: center;
+   margin-bottom: 1.5rem;
 }
 
 
     /*Sección Index(Inicio)*/
 
-.contenedorIndex{
+ /*.contenedorIndex{
    display: grid;
    grid-template-columns: 1.1fr 1fr;
    grid-template-rows: 0.3fr 1fr 0.4fr;
@@ -147,6 +140,10 @@ h2{
    "contenido contenido"
    "footer footer";
    background-color: rgba(0, 0, 0, 0.771);
+}*/
+
+.contenedorMain{
+   margin-top: 9rem;
 }
 
 .encabezadoIndex{
@@ -159,17 +156,17 @@ h2{
    z-index: 2;
 }
 
-.contenidoPrincipal{
+ /*.contenidoPrincipal{
    margin-top: 10rem;
    grid-area: contenido;
    display: flex;
    align-items: center;
-}
+}*/
 
-.contenedorI{
+ /*.contenedorI{
    display: flex;
    flex-direction: column;
-}
+}*/
 
 .tituloSecundario{
    position: relative;
@@ -188,9 +185,10 @@ h2{
  .imagenPrincipal{
     height: 50rem;
     width: 50rem;
-    border-right: solid 0.3rem white;
-    margin-right: 2rem; 
-    transition: height 2s;  
+    border-right: solid 0.3rem white; 
+    transition: height 2s;
+    margin-top: 6rem;
+    margin-bottom: 5rem;  
  }
 
  .imagenPrincipal:hover{
@@ -357,7 +355,7 @@ td{
  /*Sección Programas de Entrenamiento*/
 
  .seccionProgramas{
-    height: 155rem;
+    height: 140rem;
  }
 
 
@@ -369,8 +367,16 @@ td{
     100%{opacity: 100%;}
  }
 
+ .articuloCompeticion{
+    margin-top: 20rem;
+ }
+
+ .tituloSection{
+    margin-top: 5rem;
+ }
+
  .imagenIniciacion{
-   margin-left: 47rem;
+   margin-left: 8rem; 
    margin-bottom: 5rem;
    transform: rotate(2deg);
    border: solid 0.3rem white;
@@ -382,7 +388,7 @@ td{
  }
 
  .imagenRecreacion{
-    margin-left: 50rem;
+    margin-left: 15rem;
     height: 35rem;
     width: 45rem; 
     border: solid 0.3rem white;
@@ -394,7 +400,7 @@ td{
  }
 
  .imagenaltoRendimiento{
-    margin-left: 48rem;
+    margin-left: 8rem;
     height: 30rem;
     margin-bottom: 5rem;
     transform: rotate(-2deg);
