@@ -15,14 +15,14 @@
  body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color:rgba(0, 0, 0, 0.771) ;
+    background-color:whitesmoke;
  }
 
 
  p{
    font-size: 2rem;
    margin: 2rem 0rem;
-   color: white;
+   color: black;
    text-align: center;
 } 
 
@@ -31,17 +31,23 @@ h2{
    font-size:3.5rem;
    margin-top: 5rem;
    margin-bottom: 3rem;
-   color: darkgoldenrod;
+   color:rgb(35, 29, 29);
    font-weight: 700;
    text-decoration:underline;
+   transition: color 2s;
+   transition: font size 2s;  
+}
+
+h2:hover{
+   color: goldenrod;
+   font-size: 3rem;
 }
 
  h3{
    font-size: 2.3rem;
-   color: white;
+   color:rgba(43, 36, 36, 0.604);
    text-align: center;
    margin-bottom: 2rem;
-   text-decoration: underline;
    transition: color 2s;
    transition: font size 2s;
  }
@@ -54,42 +60,48 @@ h2{
 
  .menuNavegacion{
    list-style-type: none;
-   background: linear-gradient(to top,grey,white);
+   background-color: rgb(225, 163, 48);
    display: flex;
    justify-content: center;
 }
 
 .menuNavegacion li{
    font-weight: 500;
-   font-size: 2rem;
+   font-size: 2.5rem;
    padding: 1.5rem;
-   font-style: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: 500;
 }
 
 
 .menuNavegacion li a{
    text-decoration: none;
-   color: darkgoldenrod;
+   color: white;
 }
 
 
 .piePagina{
    margin-top: 10rem;
    grid-area: footer;
-   background: linear-gradient(to top,grey,white)
+   background-color: rgb(226, 155, 22);
+   border-top: solid 0.2rem black;
+   border-bottom: solid 0.2rem white;
+   background-image: url(https://img.freepik.com/vector-gratis/logotipo-tenis_20448-250.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 .twitter{
    position: fixed;
    right: 0.5rem;
-   bottom: 5rem;
+   bottom: 8rem;
    height: 5rem;
    width: 5rem;
 }
 
 .insta{
    position: fixed;
-   bottom: 5rem;
+   bottom: 8rem;
    right: 7rem;
    height: 5rem;
    width: 5rem;
@@ -97,21 +109,18 @@ h2{
 
 .face{
    position: fixed;
-   bottom: 5rem;
+   bottom: 8rem;
    right: 14rem;
    height: 5rem;
    width: 5rem;
 }
 
-@keyframes telefono{
-   25%{height: 5.2;
-   width: 5.2;}
-   50%{height: 5.3;
-   width: 5.3rem;}
-   75%{height: 5.2rem;
-   width: 5.2rem;}
-   100%{height: 5rem;
-   width: 5rem;}  
+@keyframes movimiento {
+   0%{transform: translate(0.5rem,0.5rem);}
+   25%{transform: translate(1rem,1rem);}
+   50%{transform: translate(1.5rem,1.5rem);}
+   75%{transform: translate(1rem,1rem);}
+   100%{transform: translate(0.5rem,0.5rem);}
 }
 
 
@@ -121,10 +130,10 @@ h2{
    margin-left: 55rem;
    position: relative;
    top: 8rem;
-   animation-name: telefono;
+   animation-name: movimiento;
    animation-iteration-count: infinite;
    animation-timing-function: ease;
-   animation-duration: 3s;
+   animation-duration: 4s;
    animation-delay: 2s;
 }
 
@@ -146,11 +155,11 @@ h2{
    "encabezado encabezado"
    "contenido contenido"
    "footer footer";
-   background-color: rgba(0, 0, 0, 0.771);
+   background-color:whitesmoke;
 }
 
 .encabezadoIndex{
-   margin-top: 3rem;
+   margin-top: 2rem;
    grid-area: encabezado;
    display: flex;
    flex-direction: column;
@@ -169,7 +178,10 @@ h2{
 .contenedorI{
    display: flex;
    flex-direction: column;
-}
+   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0jp5hXFueAFBaTIWkNCPZW9IETt9bqDXzg&usqp=CAU);
+   background-repeat: no-repeat;
+   background-size: 18rem;
+} 
 
 .tituloSecundario{
    position: relative;
@@ -177,18 +189,20 @@ h2{
 }
  
 .tituloPrincipal{                                     
-   font-size: 6rem;
-   background: linear-gradient(grey,white);
+   font-size: 7rem;
+   background-color: rgb(226, 155, 22);
    text-align: center;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-   border-bottom: solid 0.5rem black;
+   border-bottom: solid 0.5rem white;
+   color:black;
+   font-weight: 800;
  }
 
 
  .imagenPrincipal{
     height: 50rem;
     width: 50rem;
-    border-right: solid 0.3rem white;
+    border-right: solid 0.3rem black;
+    opacity:calc(50);
     margin-right: 2rem; 
     transition: height 2s;  
  }
@@ -204,8 +218,16 @@ h2{
 
    /*Sección Instalaciones*/
 
+   @keyframes cambiofondo{
+      0%{background-color:whitesmoke ;}
+      25%{background-color: rgb(219, 219, 219);}
+      50%{background-color: rgb(193, 190, 190);}
+      75%{background-color:rgb(219, 219, 219) ;}
+      100%{background-color: whitesmoke;}
+   }
+
    .contenedorInstalaciones{
-   background-color: rgba(0, 0, 0, 0.771);
+   background-color:whitesmoke;
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 0.1fr 2fr 0.2fr;
@@ -213,6 +235,11 @@ h2{
    "encabezadoI"
    "seccion"
    "footer";
+   animation-name: cambiofondo;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-duration: 5s;
+   animation-delay: 1s;
    }
 
    .encabezadoInstalaciones{
@@ -230,80 +257,71 @@ h2{
       flex-direction: column;
    }
 
+   .contenedorCanchas{
+      display:flex;
+      align-items: center;
+   }
+
+   .contenedorImagenes{
+      display: flex;
+   }
+
    .articulos{
       display: flex;
       flex-direction: column;
       align-items: center;
    }
 
-   @keyframes imagenesInstalaciones{
-      25%{border: solid 0.6rem rgb(207, 193, 158);}
-      50%{border: solid 0.7rem rgb(200, 176, 115)}
-      75%{border: solid 0.8rem goldenrod}
-      100%{border: solid 0.5rem white} 
-   }
-
-
-
  .imagenGym{
      height: 40rem;
      width: 70rem;
-     border: solid 0.5rem white;
-     animation-name: imagenesInstalaciones;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease;
-     animation-duration: 4s;
-     animation-delay: 1s;
+     border: solid 0.3rem black;
  }
 
  .imagenCanchas{
      height: 40rem;
-     width: 70rem;
-     border: solid 0.5rem white;
-     animation-name: imagenesInstalaciones;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease;
-     animation-duration: 4s;
-     animation-delay: 1s;
+     width: 60rem;
+     border-right: solid 0.3rem black;
+     margin-right: 1rem;
  }
 
  div{
      font-size: 2rem;
      margin-top: 2rem;
      margin-bottom: 2rem;
-     color: white;
+     color: black;
+}
+
+@keyframes aparecer{
+   0%{opacity: 100;}
+   25%{opacity: 50;}
+   50%{opacity: 0;}
+   75%{opacity: 50;}
+   100%{opacity: 100;} 
 }
 
 .iframeUbicacion{
     height: 40rem;
     width: 40rem;
-    animation-name: imagenesInstalaciones;
-    animation-iteration-count: infinite;
+    border: solid 0.3rem black;
+    animation-name: aparecer;
     animation-timing-function: ease;
+    animation-iteration-count: infinite;
     animation-duration: 4s;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 .imagenPileta{
     height: 40rem;
     width: auto;
-    border: solid 0.5rem white;
-    animation-name: imagenesInstalaciones;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    border: solid 0.3rem black;
 }
 
 .imagenFutbol{
     height: 40rem;
     width: auto;
-    border: solid 0.5rem white;
-    animation-name: imagenesInstalaciones;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    border: solid 0.3rem black;
+    margin-left: 2rem;
 }
 
  .esparcimiento{
@@ -320,7 +338,7 @@ h2{
 
  .requisitosEsparcimiento li{
     margin-top: 1.5rem;
-    color: white;
+    color: black;
  }
 
 
@@ -464,10 +482,10 @@ form{
    width: 30rem;
 }
 
+
 p{
    font-size: 1rem;
    margin: 2rem 0rem;
-   color: white;
 }   
    
 .contenedorIndex{
@@ -475,11 +493,13 @@ p{
    grid-template-rows: 0.2fr 1fr 0.1fr;
 }
 
-.tituloSecundario{
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
+.contenedorI{
+   background-size: 9rem;
 }
 
+h3{
+   font-size: 1.5rem;
+}
 
 .twitter{
    position: fixed;
@@ -508,7 +528,7 @@ p{
 .telefono{
    height: 2.5rem;
    width: 2.5rem;
-   margin-left: 27rem;
+   margin-left: 30rem;
    position: relative;
    top: 6.5rem;
 }
@@ -606,11 +626,15 @@ h2{
    flex-direction: column;
 }
 
+.contenedorI{
+   background-size: 8rem;
+}
+
 .imagenPrincipal{
    height: 25rem;
    width: 25rem;
-   margin-bottom: 3rem;
-   border: none;
+   margin-bottom: 2rem;
+   border: solid 0.2rem black;
 }
 
 
@@ -644,6 +668,10 @@ h2{
    font-size: 1rem;
    position: relative;
    margin-left: 22rem;
+}
+
+.piePagina{
+   background-image: none;
 }
 
 .twitter{
