@@ -391,7 +391,7 @@ td{
    margin-left: 47rem;
    margin-bottom: 5rem;
    transform: rotate(2deg);
-   border: solid 0.3rem white;
+   border: solid 0.3rem rgb(227, 168, 58);
    animation-name: aparecer;
    animation-timing-function: ease;
    animation-iteration-count: infinite;
@@ -403,7 +403,7 @@ td{
     margin-left: 50rem;
     height: 35rem;
     width: 45rem; 
-    border: solid 0.3rem white;
+    border: solid 0.3rem rgb(227, 168, 58);
     animation-name: aparecer;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
@@ -416,7 +416,7 @@ td{
     height: 30rem;
     margin-bottom: 5rem;
     transform: rotate(-2deg);
-    border: solid 0.3rem white;
+    border: solid 0.3rem rgb(227, 168, 58);
     animation-name: aparecer;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
@@ -576,12 +576,13 @@ h2{
 
 .imagenPileta{
    height: 25rem;
-   width: 40rem;
+   width: 35rem;
+   margin-left: 1rem;
 }
 
 .imagenFutbol{
    height: 25rem;
-   width: 40rem;
+   width: 35rem;
 }
 
 .esparcimiento{
