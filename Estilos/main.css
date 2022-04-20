@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+/* Estilos para todas las secciones y class reutilizadas */
+p {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+  color: black;
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  color: #231d1d;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 2s;
+  transition: font size 2s; }
+  h2:hover {
+    color: goldenrod;
+    font-size: 3rem; }
+
+h3 {
+  font-size: 2.3rem;
+  color: rgba(43, 36, 36, 0.604);
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: color 2s;
+  transition: font size 2s; }
+  h3:hover {
+    color: goldenrod;
+    font-size: 2.5rem; }
+
+.menuNavegacion {
+  list-style-type: none;
+  background-color: #e1a330;
+  display: flex;
+  justify-content: center; }
+  .menuNavegacion li {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500; }
+    .menuNavegacion li a {
+      text-decoration: none;
+      color: white; }
+
+.piePagina {
+  margin-top: 10rem;
+  grid-area: footer;
+  background-color: #e29b16;
+  border-top: solid 0.2rem black;
+  border-bottom: solid 0.2rem white;
+  background-image: url(https://img.freepik.com/vector-gratis/logotipo-tenis_20448-250.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .piePagina a {
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    margin-left: 70rem; }
+
+.twitter {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 8rem;
+  height: 5rem;
+  width: 5rem; }
+
+.insta {
+  position: fixed;
+  bottom: 8rem;
+  right: 7rem;
+  height: 5rem;
+  width: 5rem; }
+
+.face {
+  position: fixed;
+  bottom: 8rem;
+  right: 14rem;
+  height: 5rem;
+  width: 5rem; }
+
+@keyframes movimiento {
+  0% {
+    transform: translate(0.5rem, 0.5rem); }
+  25% {
+    transform: translate(1rem, 1rem); }
+  50% {
+    transform: translate(1.5rem, 1.5rem); }
+  75% {
+    transform: translate(1rem, 1rem); }
+  100% {
+    transform: translate(0.5rem, 0.5rem); } }
+
+.telefono {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 55rem;
+  position: relative;
+  top: 8rem;
+  animation-name: movimiento;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+/* Seccion Index */
+.contenedorIndex {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.4fr;
+  grid-template-areas: "encabezado encabezado" "contenido contenido" "footer footer";
+  background-color: whitesmoke; }
+
+.encabezadoIndex {
+  margin-top: 2rem;
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+
+.contenidoPrincipal {
+  margin-top: 10rem;
+  grid-area: contenido;
+  display: flex;
+  align-items: center; }
+
+.contenedorI {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0jp5hXFueAFBaTIWkNCPZW9IETt9bqDXzg&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 18rem; }
+
+.tituloSecundario {
+  position: relative;
+  bottom: 5rem; }
+
+.tituloPrincipal {
+  font-size: 7rem;
+  background-color: #e29b16;
+  text-align: center;
+  border-bottom: solid 0.5rem white;
+  color: black;
+  font-weight: 800; }
+
+.imagenPrincipal {
+  height: 50rem;
+  width: 50rem;
+  border-right: solid 0.3rem black;
+  opacity: calc(50);
+  margin-right: 2rem;
+  transition: height 2s; }
+  .imagenPrincipal:hover {
+    height: 45rem; }
+
+.logoInicio {
+  height: 1.5rem;
+  width: auto; }
