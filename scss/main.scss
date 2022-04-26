@@ -14,12 +14,14 @@ html{
 p{
     font-size: $fuenteTexto;
     margin: 2rem 0rem;
-    color:black;
-    text-align: center;
+    color:map-get($estilos,color);
+    text-align: map-get($estilos, alineacion);
 }
 
+/*Un ejemplo en donde usamos Map-Get*/
+
 h2{
-    text-align: center;
+    text-align: map-get($estilos, alineacion);
     font-size: 3.5rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
@@ -37,7 +39,7 @@ h2{
 h3{
     font-size: 2.3rem;
     color:rgba(43, 36, 36, 0.604) ;
-    text-align: center;
+    text-align: map-get($estilos, alineacion);
     margin-bottom: 2rem;
     transition: color 2s;
     transition: font size 2s;
@@ -49,9 +51,9 @@ h3{
 
 .menuNavegacion{
     list-style-type: none;
-    background-color:rgb(225, 163, 48) ;
+    background-color:map-get($estilos, fondoSecundario);
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, alineacion);
     li{
         font-weight: 500;
         font-size: $fuenteTexto;
@@ -68,8 +70,8 @@ h3{
 .piePagina{
     margin-top: 10rem;
     grid-area: footer;
-    background-color: rgb(226, 155, 22);
-    border-top: solid 0.2rem black;
+    background-color: map-get($estilos, fondoSecundario);
+    border-top: solid 0.2rem map-get($estilos, color);
     border-bottom: solid 0.2rem white;
     background-image: url(https://img.freepik.com/vector-gratis/logotipo-tenis_20448-250.jpg);
     background-repeat: no-repeat;
@@ -91,19 +93,15 @@ h3{
  }
  
  .insta{
-    position: fixed;
+    @extend .twitter;
     bottom: 8rem;
     right: 7rem;
-    height: 5rem;
-    width: 5rem;
  }
  
  .face{
-    position: fixed;
-    bottom: 8rem;
+   @extend .twitter;
+   bottom: 8rem;
     right: 14rem;
-    height: 5rem;
-    width: 5rem;
  }
 
  @keyframes movimiento {
@@ -131,6 +129,11 @@ h3{
 
  /* Seccion Index */
 
+ @mixin flexbox ($flex, $direction) {
+   display: $flex;
+   flex-direction: $direction;
+}
+
  .contenedorIndex{
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -139,14 +142,13 @@ h3{
     "encabezado encabezado"
     "contenido contenido"
     "footer footer";
-    background-color:whitesmoke;
+    background-color:map-get($estilos, fondoPrincipal);
  }
  
  .encabezadoIndex{
     margin-top: 2rem;
     grid-area: encabezado;
-    display: flex;
-    flex-direction: column;
+    @include flexbox (flex, column);
     position: sticky;
     top: 0;
     z-index: 2;
@@ -156,12 +158,11 @@ h3{
     margin-top: 10rem;
     grid-area: contenido;
     display: flex;
-    align-items: center;
+    align-items: map-get($estilos, alineacion);
  }
  
  .contenedorI{
-    display: flex;
-    flex-direction: column;
+    @include flexbox (flex, column);
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0jp5hXFueAFBaTIWkNCPZW9IETt9bqDXzg&usqp=CAU);
     background-repeat: no-repeat;
     background-size: 18rem;
@@ -174,10 +175,10 @@ h3{
   
  .tituloPrincipal{                                     
     font-size: 7rem;
-    background-color: rgb(226, 155, 22);
-    text-align: center;
+    background-color: map-get($estilos, fondoSecundario);
+    text-align: map-get($estilos, alineacion);
     border-bottom: solid 0.5rem white;
-    color:black;
+    color:map-get($estilos, color);
     font-weight: 800;
   }
  
@@ -185,7 +186,7 @@ h3{
   .imagenPrincipal{
      height: 50rem;
      width: 50rem;
-     border-right: solid 0.3rem black;
+     border-right: solid 0.3rem map-get($estilos, color);
      opacity:calc(50);
      margin-right: 2rem; 
      transition: height 2s;  

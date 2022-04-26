@@ -1,0 +1,26 @@
+
+Agregue las siguientes Keywords:
+
+1- En la sección Index: Tenis, Academia, Raqueta, Clases, Profesores, Pelotas, Entrenamiento, Fisico, Tecnica, Competicion.
+2- En la sección Instalaciones: Canchas, Gimnasio, Pileta, Esparcimiento, Instalaciones, Entrenamiento, Tenis, Club, Villa Walcarde.
+3- En la sección Staff: Profesores, Academia, Tenis, Club, Entrenamiento, Canchas, Staff, Clases, Raqueta.
+4- En la sección Programas: Tenis, Academia, Raqueta, Clases, Profesores,Pelotas, Entrenamiento, Iniciacion, Recreacion, Competicion.
+5- En la sección Contacto: Tenis, Academia, Raqueta, Clases, Profesores,Pelotas, Entrenamiento, Competicion, Club, Villa Walcarde.
+
+Agregue las siguientes descripciones:
+
+1- Index: Somos una Academia Integral de Entrenamiento Tenístico que trabaja con protocolos de elite... Villa Walcarde - Córdoba - Argentina.
+2- Instalaciones: Uno de los clubes mas tradicionales de Córdoba. Ubicado en Villa Walcarde, posee las mejores instalaciones y canchas de la provincia.
+3- Staff: Dirección Deportiva. Nuestro proyecto esta bajo la supervisión constante de Giussani Horacio, fundador de la Academia.
+4- Programas: Se brindan las bases para que los alumnos posean un amplio abanico de experiencias deportivas, con diferentes areas de entrenamiento.
+5- Contacto: Somos una Academia Integral de Entrenamiento Tenístico. Contactate con Nosotros. Villa Walcarde - Córdoba - Argentina.
+
+Agregue los siguientes titulos:
+
+1- Index: Academia Giussani Tenis - Villa Walcarde.
+2- Instalaciones: Instalaciones | Academia Giussani.
+3- Staff: Staff | Academia Giussani.
+4- Programas: Programas de Entrenamiento | Academia Giussani.
+5- Contacto: Contacto | Academia Giussani.
+
+Encabezados: Los mismos ya estan definidos en el proyecto, con una organización jerarquica según corresponda. (h1,h2,h3,etc).

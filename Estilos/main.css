@@ -12,6 +12,7 @@ p {
   color: black;
   text-align: center; }
 
+/*Un ejemplo en donde usamos Map-Get*/
 h2 {
   text-align: center;
   font-size: 3.5rem;
@@ -55,7 +56,7 @@ h3 {
 .piePagina {
   margin-top: 10rem;
   grid-area: footer;
-  background-color: #e29b16;
+  background-color: #e1a330;
   border-top: solid 0.2rem black;
   border-bottom: solid 0.2rem white;
   background-image: url(https://img.freepik.com/vector-gratis/logotipo-tenis_20448-250.jpg);
@@ -67,7 +68,7 @@ h3 {
     position: relative;
     margin-left: 70rem; }
 
-.twitter {
+.twitter, .insta, .face {
   position: fixed;
   right: 0.5rem;
   bottom: 8rem;
@@ -75,18 +76,12 @@ h3 {
   width: 5rem; }
 
 .insta {
-  position: fixed;
   bottom: 8rem;
-  right: 7rem;
-  height: 5rem;
-  width: 5rem; }
+  right: 7rem; }
 
 .face {
-  position: fixed;
   bottom: 8rem;
-  right: 14rem;
-  height: 5rem;
-  width: 5rem; }
+  right: 14rem; }
 
 @keyframes movimiento {
   0% {
@@ -148,7 +143,7 @@ h3 {
 
 .tituloPrincipal {
   font-size: 7rem;
-  background-color: #e29b16;
+  background-color: #e1a330;
   text-align: center;
   border-bottom: solid 0.5rem white;
   color: black;
