@@ -76,54 +76,42 @@ h3{
     background-image: url(https://img.freepik.com/vector-gratis/logotipo-tenis_20448-250.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    display: flex;
+    justify-content: end;
     a{
        font-size: $fuenteTexto;
-       color: white;
-       position: relative;
-       margin-left: 70rem; 
+       color: white; 
     }
+ }
+
+ .infoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .contenedorRedes{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: 20rem;
  }
  
  .twitter{
-    position: fixed;
-    right: 0.5rem;
-    bottom: 8rem;
     height: 5rem;
     width: 5rem;
  }
  
  .insta{
     @extend .twitter;
-    bottom: 8rem;
-    right: 7rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem,
  }
  
  .face{
    @extend .twitter;
-   bottom: 8rem;
-    right: 14rem;
- }
-
- @keyframes movimiento {
-    0%{transform: translate(0.5rem,0.5rem);}
-    25%{transform: translate(1rem,1rem);}
-    50%{transform: translate(1.5rem,1.5rem);}
-    75%{transform: translate(1rem,1rem);}
-    100%{transform: translate(0.5rem,0.5rem);}
- }
- 
- 
- .telefono{
-    height: 5rem;
-    width: 5rem;
-    margin-left: 55rem;
-    position: relative;
-    top: 8rem;
-    animation-name: movimiento;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-delay: 2s;
+   margin-right: 1rem;
  }
 
 
@@ -137,7 +125,7 @@ h3{
  .contenedorIndex{
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
     grid-template-areas: 
     "encabezado encabezado"
     "contenido contenido"
@@ -159,6 +147,11 @@ h3{
     grid-area: contenido;
     display: flex;
     align-items: map-get($estilos, alineacion);
+ }
+
+ .parrafoPrincipal{
+    width: 90rem;
+    line-height: 2.5rem;
  }
  
  .contenedorI{
@@ -188,7 +181,8 @@ h3{
      width: 50rem;
      border-right: solid 0.3rem map-get($estilos, color);
      opacity:calc(50);
-     margin-right: 2rem; 
+     margin-right: 2.5rem; 
+     margin-left: 2.5rem;
      transition: height 2s;  
      &:hover{
          height: 45rem;
@@ -201,4 +195,836 @@ h3{
      width: auto;
   }
  
+   /*Sección Instalaciones*/
 
+   @keyframes cambiofondo{
+      0%{background-color:map-get($estilos, fondoPrincipal);}
+      25%{background-color: rgb(219, 219, 219);}
+      50%{background-color: rgb(193, 190, 190);}
+      75%{background-color:rgb(219, 219, 219) ;}
+      100%{background-color: map-get($estilos, fondoPrincipal);}
+   }
+
+   .contenedorInstalaciones{
+   background-color:map-get($estilos, fondoPrincipal);
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2fr 0.2fr;
+   grid-template-areas: 
+   "encabezadoI"
+   "seccion"
+   "footer";
+   animation-name: cambiofondo;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-duration: 5s;
+   animation-delay: 1s;
+   }
+
+   .encabezadoInstalaciones{
+      grid-area: encabezadoI;
+      position: sticky;
+      top: 0;
+      margin-top: 3rem;
+      @include flexbox (flex, column);
+      z-index: 2;
+   }
+
+   .seccionInstalaciones{
+      grid-area: seccion;
+      @include flexbox (flex, column);
+   }
+
+   .contenedorCanchas{
+      display:flex;
+      align-items:map-get($estilos, alineacion) ;
+   }
+
+   .parrafoCanchas{
+      width: 80rem;
+      line-height: 2.5rem;
+   }
+
+   .contenedorImagenes{
+      display: flex;
+      justify-content: center;
+   }
+
+   .contenedorGimnasio{
+      @include flexbox (flex, column);
+      align-items: center;
+   }
+
+ .imagenGym{
+     height: 40rem;
+     width: 70rem;
+     border: solid 0.3rem map-get($estilos, color);
+ }
+
+ .imagenCanchas{
+     height: 40rem;
+     width: 60rem;
+     border: solid 0.3rem map-get($estilos, color);
+     margin: 0rem 2.5rem;
+ }
+
+ div{
+     font-size: 2rem;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     color: map-get($estilos, color);
+}
+
+@keyframes aparecer{
+   0%{opacity: 100;}
+   25%{opacity: 50;}
+   50%{opacity: 0;}
+   75%{opacity: 50;}
+   100%{opacity: 100;} 
+}
+
+.contenedorUbicacion{
+   @include flexbox (flex, column);
+   align-items: center;
+}
+
+.iframeUbicacion{
+    height: 40rem;
+    width: 40rem;
+    border: solid 0.3rem map-get($estilos, color);
+    animation-name: aparecer;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.imagenPileta{
+    height: 40rem;
+    width: auto;
+    border: solid 0.3rem map-get($estilos, color);
+}
+
+.imagenFutbol{
+    height: 40rem;
+    width: auto;
+    border: solid 0.3rem map-get($estilos, color);
+    margin-left: 2rem;
+}
+
+ .esparcimiento{
+   text-align: map-get($estilos, alineacion);
+   font-size: 2rem;
+   margin-top: 1.5rem;
+   color: black;
+ }
+
+ .requisitosEsparcimiento{
+    font-size: 1.5rem;
+    text-align: map-get($estilos, alineacion);
+    margin-top: 3rem;
+    li{
+      margin-top: 1.5rem;
+      color: map-get($estilos, color);
+    }
+ }
+
+
+ /*Sección Staff*/
+
+.contenedorStaff{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2fr 0.2fr;
+   grid-template-areas: 
+   "encabezadoII"
+   "seccionStaff"
+   "footer";
+}
+
+.encabezadoStaff{
+   grid-area: encabezadoII;
+   margin-top: 3rem;
+   position: sticky;
+   top: 0rem;
+   z-index: 2;
+}
+
+.seccionStaff{
+   grid-area: seccionStaff;
+}
+
+.articuloProfesores{
+   @include flexbox(flex,column);
+   align-items: center;
+}
+
+.tablaProfesores{
+   font-size: 2rem;
+   border:groove 1rem black ;
+   background-color: rgb(238, 225, 225);
+   width: 68rem;
+   margin-top: 3rem;
+   margin-bottom: 8rem;
+   @include flexbox(flex,column);
+   align-items: center;
+}
+
+
+ th{
+   padding: 1rem;
+   border: groove 0.5rem black;
+   background-color:rgb(247, 215, 136);
+ }
+
+td{
+   padding: 1rem;
+   border: groove 0.5rem black;
+}
+
+.articuloVideo{
+   @include flexbox(flex,column);
+   align-items: center;
+}
+
+.videoProfesores{
+   width: 72rem;
+   margin-top: 4rem;
+}
+
+/*Sección Programas de Entrenamiento*/
+
+.contenedorProgramas{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2fr 0.2fr;
+   grid-template-areas:
+   "encabezadoIII"
+   "seccionPrograma"
+   "footer";
+}
+
+.encabezadoProgramas{
+   grid-area: encabezadoIII;
+   margin-top: 3rem;
+   position: sticky;
+   top: 0rem;
+   z-index: 2;
+}
+.seccionProgramas{
+   grid-area: seccionPrograma;
+}
+
+.contenedorArticulos{
+   @include flexbox (flex, column);
+}
+
+.articuloIniciacion{
+   @include flexbox (flex, column);
+   align-items: center;
+   margin-bottom: 6rem;
+   background-color:ghostwhite;
+}
+
+.articuloCompeticion{
+   @include flexbox (flex, column);
+   align-items: center;
+   margin-bottom: 6rem;
+   background-color:ghostwhite;
+}
+
+.articuloRendimiento{
+   @include flexbox (flex, column);
+   align-items: center;
+   margin-bottom: 6rem;
+   background-color:ghostwhite;
+}
+
+.articuloRecreacion{
+   @include flexbox (flex, column);
+   align-items: center;
+   background-color:ghostwhite;
+}
+
+.parrafoProgramas{
+   width: 120rem;
+   line-height: 2.5rem;
+}
+
+
+@keyframes aparecer{
+   0%{opacity: 100%;}
+   25%{opacity: 75%;}
+   50%{opacity: 50%;}
+   75%{opacity: 75%;}
+   100%{opacity: 100%;}
+}
+
+.imagenIniciacion{
+  border: solid 0.3rem rgb(227, 168, 58);
+  animation-name: aparecer;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 1s; 
+}
+
+.imagenRecreacion{
+   height: 35rem;
+   width: 45rem; 
+   border: solid 0.3rem rgb(227, 168, 58);
+   animation-name: aparecer;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-duration: 2s;
+   animation-delay: 1s; 
+}
+
+.imagenaltoRendimiento{
+   height: 30rem;
+   border: solid 0.3rem rgb(227, 168, 58);
+   animation-name: aparecer;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-duration: 2s;
+   animation-delay: 1s; 
+}
+
+/*Seccion Contacto*/
+
+.contendorContacto{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-row: 0.1fr 2fr 0.2fr;
+   grid-template-areas:
+   "encabezadoIIII"
+   "formulario"
+   "footer";
+}
+
+.encabezadoContacto{
+   grid-area:encabezadoIIII;
+   margin-top: 3rem;
+   position: sticky;
+   top: 0rem;
+   z-index: 2;
+}
+
+.contenedorFormulario{
+   grid-area: formulario;
+}
+
+form{
+   background-color:rgb(252, 213, 162);
+   height: 75rem;
+   margin: 0rem 20rem;
+   border: solid 0.5rem black;
+   }
+
+.formularioI{
+   display: flex;
+   justify-content:space-around;
+   margin-top: 8rem;
+   margin-bottom: 10rem;
+}   
+
+.menuDesplegable{
+   text-align: center;
+   margin-bottom: 10rem;
+   @include flexbox(flex,column);
+   align-items: center;
+}
+
+.textArea{
+   @include flexbox(flex,column);
+   align-items: center;
+}
+
+textarea{
+   width: 40rem;
+   height: 25rem;
+   margin-top: 2rem;
+
+}
+
+.botonesFormulario{
+   @include flexbox(flex,row);
+   justify-content: center;
+}
+
+.boton{
+   margin-right: 1rem;
+}
+
+/* Diseño para Computadora 1200px - Media Queries*/
+
+@media screen and (max-width:1200px){
+
+/*Seccion Index para Computadora 1200px*/
+
+.parrafoPrincipal{
+   width: 60rem;
+}
+
+.contenedorI{
+   background-image: none;
+}
+
+.contenedorRedes{
+   margin-left: 5rem;
+}
+
+
+/*Seccion Instalaciones para Computadora 1200px*/
+
+.parrafoCanchas{
+   width: 50rem;
+}
+
+/*Seccion Programas para Computadora 1200px*/
+
+.parrafoProgramas{
+   width: 100rem;
+}
+
+/*Seccion Contacto para Computadora 1200px*/
+
+.formularioI{
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.inputNombre{
+   width: 25rem;
+}
+
+.inputCorreo{
+   width: 25rem;
+}
+
+
+}
+
+/* Diseño para Table 768px - Media Queries*/
+
+
+@media screen and (max-width:768px){
+   
+   /* Seccion Index para Tablet*/
+   
+   .imagenPrincipal{
+      height: 30rem;
+      width: 30rem;
+   }
+
+   .parrafoPrincipal{
+      width: 40rem;
+      line-height: 1.5rem;
+   }
+
+   .contenedorI{
+      background-image: none;
+   }
+   
+   h2{
+      font-size: 3rem;
+   }
+
+   p{
+      font-size: 1rem;
+      margin: 2rem 0rem;
+   }   
+      
+   .contenedorIndex{
+      grid-template-columns: 0.7fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.1fr;
+   }
+   
+   
+   h3{
+      font-size: 1.5rem;   
+   }
+   
+   .piePagina{
+      background-image: none;
+      justify-content: space-evenly;
+   }
+
+   .twitter{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   
+   .insta{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   
+   .face{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   
+   .tituloPrincipal{                                     
+      font-size: 3.5rem;
+    }
+
+    .menuNavegacion{
+      li{font-size: 1.5rem;
+         }
+   } 
+
+   /* Seccion Instalaciones para Tablet */
+
+.contenedorInstalaciones{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 2.5fr 0.1fr;
+   }
+
+div{
+   font-size: 1.1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+ }
+
+ .parrafoCanchas{
+    width: 30rem;
+    line-height: 1.5rem;
+ }
+
+ .imagenCanchas{
+   height: 25rem;
+   width: 40rem;
+}
+
+h2{
+   font-size: 2.5rem;
+}
+
+.imagenGym{
+   height: 25rem;
+   width: 40rem;
+}
+
+.imagenPileta{
+   height: 25rem;
+   width: 35rem;
+   margin-left: 1rem;
+}
+
+.imagenFutbol{
+   height: 25rem;
+   width: 35rem;
+}
+
+.esparcimiento{
+   font-size: 1.2rem;
+ }
+
+ .requisitosEsparcimiento{
+    font-size: 1rem;
+    margin-top: 1rem;
+ }
+
+ .iframeUbicacion{
+   height: 25rem;
+   width: 25rem;
+}
+
+/* Seccion Staff para Tablet*/
+
+.tablaProfesores{
+   width: 55rem;
+}
+
+th{
+   font-size: 1.5rem;
+}
+
+td{
+   font-size: 1.5rem;
+}
+
+.videoProfesores{
+   width: 55rem;
+}
+
+/*Seccion Programas para Tablet*/
+
+.parrafoProgramas{
+   width: 70rem;
+   line-height: 1.5rem;
+   font-size: 1.3rem;
+}
+
+.imagenIniciacion{
+   height: 25rem;
+   width: 35rem;
+}
+
+.imagenRecreacion{
+   height: 25rem;
+   width: 35rem;
+}
+
+.imagenaltoRendimiento{
+   height: 25rem;
+   width: 35rem;
+}
+
+/*Seccion Contacto para Tablet*/
+
+form{
+   margin: 0rem 3rem;
+}
+
+textarea{
+   width: 30rem;
+   height: 20rem;
+}
+
+.parrafoContacto{
+   width: 70rem;
+   line-height: 1.5rem;
+   font-size: 1.3rem;
+   margin-left: 3rem;
+}
+
+.inputCorreo{
+   margin:0rem 1rem;
+}
+
+.inputNombre{
+   margin:0rem 1rem;
+}
+
+    }
+
+
+/* Diseño para Mobile 480px, Media Queries*/
+
+@media screen and (max-width:480px){
+
+   /* Seccion Index para Mobile 480px*/
+   
+   .contenedorIndex{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 1fr 0.2fr;
+      grid-template-areas: 
+      "encabezadoI"
+      "contenido"
+      "footer";
+   }
+   
+   .encabezadoIndex{
+      grid-area: encabezadoI;
+   }
+   
+   .contenidoPrincipal{
+      grid-area: contenido;
+      @include flexbox(flex,column)
+   }
+   
+   
+   .imagenPrincipal{
+      height: 25rem;
+      width: 25rem;
+      margin-bottom: 2rem;
+      border: solid 0.2rem black;
+   }
+   
+   
+   .tituloPrincipal{                                     
+      font-size: 3rem;
+    }
+
+    .parrafoPrincipal{
+       width: 43rem;
+       line-height: 1.8rem;
+       font-size: 1rem;
+    }
+   
+   .tituloSecundario{
+      font-size: 2rem;
+      margin-bottom: 0rem;
+   }
+   
+    p{
+       font-size: 0.9rem;
+    }
+   
+    .menuNavegacion{
+       @include flexbox(flex,column);
+       align-items: center;
+       li{
+         font-size: 1.2rem;
+         margin: 0;
+         padding: 0.2rem;
+       }
+    }
+   
+   .piePagina{
+      background-image: none;
+      a{
+         font-size: 1rem;  
+      }
+   }
+
+   .contenedorRedes{
+      margin-left: 3rem;
+   }
+   
+   .twitter{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   
+   .insta{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+   
+   .face{
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+
+   /* Seccion Instalaciones para Mobile 480px */
+
+
+.imagenCanchas{
+   height: 15rem;
+   width: 25rem;
+}
+
+.imagenGym{
+   height: 15rem;
+   width: 25rem;
+}
+
+.imagenPileta{
+   height: 15rem;
+   width: 20rem;
+}
+
+.imagenFutbol{
+   height: 15rem;
+   width: 20rem;
+}
+
+.contenedorCanchas{
+   @include flexbox(flex,column)
+}
+
+.parrafoCanchas{
+   width: 38rem;
+   margin-top: 3rem;
+}
+
+div{
+   font-size: 1rem;
+   text-align: center;
+ }
+
+
+.esparcimiento{
+   font-size: 1rem;
+}
+
+ .requisitosEsparcimiento{
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+ }
+
+ .iframeUbicacion{
+   height: 15rem;
+   width: 15rem;
+ }
+
+ /*Seccion Staff para Mobile 480 px*/
+
+ .tablaProfesores{
+    width: 35rem;
+    font-size: 1rem;
+ }
+
+ th{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+ }
+    
+ td{
+    padding: 0.5rem;
+    font-size: 1.3rem;
+ }
+
+ .videoProfesores{
+    width: 35rem;
+ }
+
+ /*Seccion Programas para Mobile 480px*/
+
+ .parrafoProgramas{
+    width: 40rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+ }
+
+ .imagenIniciacion{
+   height: 20rem;
+   width: 25rem;
+ }
+
+ .imagenaltoRendimiento{
+   height: 20rem;
+   width: 25rem;
+ }
+
+ .imagenRecreacion{
+   height: 20rem;
+   width: 25rem;
+ }
+
+ /*Seccion Contacto para Mobile 480px*/
+
+ form{
+    height: 65rem;
+ }
+
+ .parrafoContacto{
+    width: 40rem;
+    font-size: 1rem;
+ }
+
+ .formularioI{
+    justify-content:center;
+    flex-wrap: wrap;
+ }
+
+ .inputNombre{
+    width: 13rem;
+    margin: 0rem;
+ }
+
+ .inputCorreo{
+    width: 13rem;
+    margin: 0rem;
+ }
+
+ .menuDesplegable{
+    font-size: 1.3rem;
+ }
+
+ textarea{
+    width: 25rem;
+    height: 15rem;
+ }
+
+ .boton{
+    font-size: 1rem;
+ }
+
+
+
+    }
+    

@@ -7,13 +7,14 @@
     <meta name="keywords" content="Tenis, Academia, Raqueta, Clases, Profesores,Pelotas, Entrenamiento, Competicion, Club, Villa Walcarde">
     <meta name="description" content="Somos una Academia Integral de Entrenamiento Tenístico. Contactate con Nosotros. Villa Walcarde - Córdoba - Argentina">
     <link rel="shortcut icon" href="../Multimedia/Icono-Tenis.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <link rel="stylesheet" href="../Estilos/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contacto | Academia Giussani</title>
 </head>
-<body>
 
- <header>
+<body class="contenedorContacto">
+
+ <header class="encabezadoContacto">
      
     <h1 class="animate__animated animate__bounceInLeft tituloPrincipal">Contacto</h1>
 
@@ -31,59 +32,62 @@
 
  </header>
 
- <div class="contenedorFormulario">
-    <h2 class="animate__animated animate__bounceInLeft">Formulario</h2>  
-    <p>Si tenes consultas sobre la Academia, la escuela de tenis y la metodología utilizada, sobre las diferentes áreas de desarrollo, y los programas de entrenamiento, podes escribirnos a academiatenisgiussani@gmail.com o dejarnos tu mensaje a través del siguiente formulario de contacto.</p>
+    <div class="contenedorFormulario">
+        <h2 class="animate__animated animate__bounceInLeft">Formulario</h2>  
+        <p class="parrafoContacto">Si tenes consultas sobre la Academia, la escuela de tenis y la metodología utilizada, sobre las diferentes áreas de desarrollo, y los programas de entrenamiento, podes escribirnos a academiatenisgiussani@gmail.com o dejarnos tu mensaje a través del siguiente formulario de contacto.</p>
 
-    <form>
+        <form>
 
-        <h3>Envianos tu Consulta</h3>
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" placeholder="Nombre y Apellido" name="nombre">
-        <label for="email">Correo:</label>
-        <input type="email" placeholder="Email" name="email">
+            <h3>Envianos tu Consulta</h3>
+            <div class="formularioI">
+                <label for="nombre">Nombre y Apellido:</label> 
+                <input type="text" name="nombre" class="inputNombre">
+                <label for="email">Correo:</label>
+                <input type="email" name="email" class="inputCorreo">
     
     
-        <label for="gen">Género:</label>
-        <input type="radio" value="fem" name="gen">Femenino
-        <input type="radio" value="mas" name="gen">Masculino
-        <input type="radio" value="pne" name="gen">Otro
+                <label for="gen">Género:</label>
+                <input type="radio" value="fem" name="gen">Femenino
+                <input type="radio" value="mas" name="gen">Masculino
+                <input type="radio" value="pne" name="gen">Otro
+            </div>    
+
+            <fieldset class="menuDesplegable">
+                <legend>Programas de Entrenamiento</legend>
+                <select name="" id="">
+                    <option value="Ini">Iniciación</option>
+                    <option value="Comp">Competición</option>
+                    <option value="altr">Alto Rendimiento</option>
+                    <option value="recr">Recreación</option>
+                </select>
+            </fieldset>
+            <div class="textArea">
+                <label for="mensaj">Escribe tu mensaje:</label>
+                <textarea name="mensaj" id="" cols="30" rows="10" placeholder="Tu consulta"></textarea>
+            </div>  
+            <div class="botonesFormulario">
+                <input type="submit" class="boton">
+                <input type="reset" value="Resetear" class="boton">
+                <input type="button" value="No tocar" class="boton"> 
+            </div>    
+        </form>
+
+    </div>
 
 
-        <fieldset class="menuDesplegable">
-            <legend>Programas de Entrenamiento</legend>
-            <select name="" id="">
-                <option value="Ini">Iniciación</option>
-                <option value="Comp">Competición</option>
-                <option value="altr">Alto Rendimiento</option>
-                <option value="recr">Recreación</option>
-            </select>
-        </fieldset>
-
-        <label for="mensaj">Escribe tu mensaje:</label>
-        <textarea name="mensaj" id="" cols="30" rows="10" placeholder="Tu consulta"></textarea>
-  
-        <input type="submit" class="boton">
-        <input type="reset" value="Resetear" class="boton">
-        <input type="button" value="No tocar" class="boton"> 
-
-    </form>
-
-</div>
-
-
-    
-    <footer class="piePagina">
-
-        <img src="../Multimedia/Twitter.png" alt="Icono Twitter" class="twitter">
-        <img src="../Multimedia/Insta.png" alt="Icono Instagram" class="insta">
-        <img src="../Multimedia/Face.png" alt="Icono Facebook" class="face">
-        <img src="../Multimedia/Telefono.png" alt="Icono telefono" class="telefono">
+<footer class="piePagina">    
+    <div class="infoFooter">
         <p>351-5193236 - Contactános</p>
         <a href="contacto.html">Contacto</a>
         <p>Dirección: Country Club Colegio de Escribanos - Villa Walcarde - Córdoba - Argentina</p>
-
-    </footer>
+    </div>
+    <div class="contenedorRedes">
+        <img src="../Multimedia/Twitter.png" alt="Icono Twitter" class="twitter">
+        <img src="../Multimedia/Insta.png" alt="Icono Instagram" class="insta">
+        <img src="../Multimedia/Face.png" alt="Icono Facebook" class="face">
+    </div>     
+</footer>    
+  
 
     
 </body>
