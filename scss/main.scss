@@ -556,8 +556,57 @@ textarea{
    margin-right: 1rem;
 }
 
-/* Diseño para Computadora 1200px - Media Queries*/
+/*Diseño para Computadora 1440px - Media Queries*/
 
+@media screen and (max-width:1440px){
+
+/*Seccion Index para Computadora 1440px*/
+
+.parrafoPrincipal{
+   width: 83rem;
+}
+
+/*Seccion Instalaciones para Computadora 1440px*/
+
+.parrafoCanchas{
+   width: 75rem;
+}
+
+/*Seccion Contacto para Computadora 1440px */
+
+.formularioI{
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.inputCorreo{
+   width: 35rem;
+   margin-bottom: 2rem;
+}
+
+.labelCorreo{
+   margin-left: 4rem;
+}
+
+.inputNombre{
+   width: 35rem;
+   margin-bottom: 2rem;
+}
+
+}
+
+/*Diseño para Computadora 1400px - Media Queries*/
+
+/*Seccion Instalaciones para Computadora 1400px*/
+
+@media screen and (max-width:1400px){
+   .parrafoCanchas{
+      width: 70rem;
+   } 
+}
+
+/* Diseño para Computadora 1200px - Media Queries*/
+ 
 @media screen and (max-width:1200px){
 
 /*Seccion Index para Computadora 1200px*/
@@ -578,6 +627,27 @@ textarea{
 /*Seccion Instalaciones para Computadora 1200px*/
 
 .parrafoCanchas{
+   width: 50rem;
+   margin-left: 5rem;
+}
+
+.imagenCanchas{
+   height: 30rem;
+   width: 50rem;
+}
+
+.imagenGym{
+   height: 30rem;
+   width: 50rem;
+}
+
+.imagenPileta{
+   height: 30rem;
+   width: 50rem;
+}
+
+.imagenFutbol{
+   height: 30rem;
    width: 50rem;
 }
 
@@ -605,6 +675,102 @@ textarea{
 
 }
 
+/*Diseño para Computadora 1024px - Media Queries*/
+
+@media screen and (max-width:1024px){
+
+   p{
+      font-size: 1.8rem;
+   }
+
+   /*Seccion Index para Computadora 1024px*/
+   
+   
+   .imagenPrincipal{
+      width: 40rem;
+      height: 40rem;
+   }
+   
+   .parrafoPrincipal{
+      width: 50rem;
+      margin-left: 3rem;
+      font-size: 1.8rem;
+   }
+   
+   .piePagina{
+      background-image: none;
+   }
+
+   /*Seccion Instalciones para Computadora 1024px*/
+   
+   .imagenCanchas{
+      width: 50rem;
+   }
+
+   .imagenGym{
+      width: 50rem;
+   }
+
+   .imagenPileta{
+      width: 45rem;
+
+   }
+
+   .imagenFutbol{
+      width: 45rem;
+   }
+
+   .parrafoCanchas{
+      width: 40rem;
+      margin-left: 3rem;
+      font-size: 1.8rem;
+   }
+
+   /*Seccion Staff para Computadora 1024px*/ 
+
+   .videoProfesores{
+      width: 65rem;
+   }
+
+
+   /*Seccion Programas para Computadora 1024px*/
+
+   .parrafoProgramas{
+      font-size: 1.8rem;
+   }
+
+   /*Seccion Contacto para Computadora 1024px*/
+
+   form{
+      width: 80rem;
+      margin-left: 10rem;
+   }
+
+   .parrafoContacto{
+      font-size: 1.8rem;
+      margin: 2rem 1rem;
+   }
+
+   .inputNombre{
+      width: 23rem;
+      margin-bottom: 5rem;
+      margin-left: 1rem;
+   }
+
+   .inputCorreo{
+      width: 23rem;
+      margin-bottom: 5rem;
+      margin-left: 1rem;
+   }
+
+   textarea{
+      width: 35rem;
+      height: 20rem;
+   }
+
+
+   }
+
 /* Diseño para Table 768px - Media Queries*/
 
 
@@ -619,7 +785,9 @@ textarea{
 
    .parrafoPrincipal{
       width: 40rem;
-      line-height: 1.5rem;
+      line-height: 1.8rem;
+      margin-left: 0rem;
+      font-size: 1.3rem;
    }
 
    .contenedorI{
@@ -631,7 +799,7 @@ textarea{
    }
 
    p{
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin: 2rem 0rem;
    }   
       
@@ -682,14 +850,16 @@ textarea{
    }
 
 div{
-   font-size: 1.1rem;
+   font-size: 1.3rem;
    margin-top: 1rem;
    margin-bottom: 1rem;
  }
 
  .parrafoCanchas{
     width: 30rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    margin-left: 0rem;
  }
 
  .imagenCanchas{
@@ -734,7 +904,7 @@ h2{
 /* Seccion Staff para Tablet*/
 
 .tablaProfesores{
-   width: 55rem;
+   width: 50rem;
 }
 
 th{
@@ -746,14 +916,14 @@ td{
 }
 
 .videoProfesores{
-   width: 55rem;
+   width: 50rem;
 }
 
 /*Seccion Programas para Tablet*/
 
 .parrafoProgramas{
    width: 70rem;
-   line-height: 1.5rem;
+   line-height: 1.8rem;
    font-size: 1.3rem;
 }
 
@@ -775,7 +945,13 @@ td{
 /*Seccion Contacto para Tablet*/
 
 form{
-   margin: 0rem 3rem;
+   margin: 0rem 10rem;
+   width: 55rem;
+   height: 70rem;
+}
+
+.formularioI{
+   flex-wrap: wrap;
 }
 
 textarea{
@@ -785,17 +961,21 @@ textarea{
 
 .parrafoContacto{
    width: 70rem;
-   line-height: 1.5rem;
+   line-height: 1.8rem;
    font-size: 1.3rem;
    margin-left: 3rem;
 }
 
 .inputCorreo{
-   margin:0rem 1rem;
+   width: 17rem;
+   margin: 0rem;
+   margin-bottom: 4rem;
 }
 
 .inputNombre{
-   margin:0rem 1rem;
+   width: 17rem;
+   margin: 0rem;
+   margin-bottom: 4rem;
 }
 
     }
@@ -841,7 +1021,7 @@ textarea{
     .parrafoPrincipal{
        width: 43rem;
        line-height: 1.8rem;
-       font-size: 1rem;
+       font-size: 1.2rem;
     }
    
    .tituloSecundario{
@@ -850,7 +1030,7 @@ textarea{
    }
    
     p{
-       font-size: 0.9rem;
+       font-size: 1.2rem;
     }
    
     .menuNavegacion{
@@ -919,10 +1099,11 @@ textarea{
 .parrafoCanchas{
    width: 38rem;
    margin-top: 3rem;
+   font-size: 1.2rem;
 }
 
 div{
-   font-size: 1rem;
+   font-size: 1.2rem;
    text-align: center;
  }
 
@@ -945,21 +1126,23 @@ div{
 
  .tablaProfesores{
     width: 35rem;
+    height: 20rem;
     font-size: 1rem;
  }
 
  th{
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
  }
     
  td{
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
  }
 
  .videoProfesores{
     width: 35rem;
+    height: 20rem;
  }
 
  /*Seccion Programas para Mobile 480px*/
@@ -967,7 +1150,7 @@ div{
  .parrafoProgramas{
     width: 40rem;
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
  }
 
  .imagenIniciacion{
@@ -989,11 +1172,13 @@ div{
 
  form{
     height: 65rem;
+    margin-left: 3rem;
+    width: 40rem;
  }
 
  .parrafoContacto{
-    width: 40rem;
-    font-size: 1rem;
+    width: 43rem;
+    font-size: 1.2rem;
  }
 
  .formularioI{
@@ -1002,17 +1187,19 @@ div{
  }
 
  .inputNombre{
-    width: 13rem;
+    width: 10rem;
     margin: 0rem;
+    margin-bottom: 5rem;
  }
 
  .inputCorreo{
-    width: 13rem;
+    width: 10rem;
     margin: 0rem;
+    margin-bottom: 5rem;
  }
 
  .menuDesplegable{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
  }
 
  textarea{
